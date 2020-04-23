@@ -1,0 +1,11 @@
+.market-cap-ctnr {
+	font-size: 4em;
+	position: absolute;
+	top: 30%;
+	-webkit-transform: translateY(-30%);
+	-ms-transform: translateY(-30%);
+	transform: translateY(-30%);
+}
+.market-cap-ctnr h1 {
+	font-size: 2em;
+}

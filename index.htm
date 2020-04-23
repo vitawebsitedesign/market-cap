@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Market cap fetcher</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/marketCap.css" rel="stylesheet">
+		<script src="js/angular.min.js"></script>
+		<script src="js/marketCapApp.js"></script>
+		<script src="js/marketCapService.js"></script>
+		<script src="js/marketCapController.js"></script>
+		<script src="js/jquery-3.1.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body data-ng-app="MarketCapApp" data-ng-controller="MarketCapController">
+		<div class="container-fluid">
+			<div class="market-cap-ctnr">
+				<div class="col-xs-12 col-md-8 col-xs-offset-0 col-md-offset-2 text-center">
+					<h1 class="col-xs-12">ASX Market Cap</h1>
+					<input type="text" placeholder="Ticker symbol (e.g.: ANZ)" class="col-xs-12" data-ng-model="tkr">
+					<div class="col-xs-12" data-ng-bind="marketCap"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
